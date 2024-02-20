@@ -9,7 +9,7 @@
 
 1. Clone this repository.
 2. Navigate to the directory containing the Dockerfile.
-3. Run `docker build -t your-docker-image-name .`
+3. Run `docker build -t project .`
 
 ## Using the Development Environment
 
