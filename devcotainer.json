@@ -1,18 +1,22 @@
-
-	{
-
-	
-		"name": "Flutter Web Development",
-		"image": "your-docker-image-name",
-		"appPort": [8080],
+{
+	"name": "project",
+	"build": {
+	  "context": ".",
+	  "dockerfile": "Dockerfile"
+	  
+	},
+	"customizations": {
+	  "vscode": {
 		"extensions": [
-			"Dart-Code.flutter",
-			"Dart-Code.dart-code"
+		  "ms-vscode.cpptools",
+		  "ms-python.python"
+		  
 		],
-		"settings": { 
-			"terminal.integrated.shell.linux": "/bin/bash"
-		},
-		"remoteUser": "developer"
+		"settings": {
+		  "terminal.integrated.shell.linux": "/bin/bash"
+		  
+		}
+	  }
 	}
 	
-
+  }
