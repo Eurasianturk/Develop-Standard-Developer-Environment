@@ -13,10 +13,12 @@
 		  
 		],
 		"settings": {
-		  "terminal.integrated.shell.linux": "/bin/bash"
-		  
-		}
-	  }
-	}
-	
-  }
+      }
+    }
+  },
+  "forwardPorts": [
+    8080 
+  ],
+  "postCreateCommand": "flutter doctor",
+  "remoteUser": "vscode"
+}
