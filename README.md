@@ -5,11 +5,10 @@
 - Docker
 - Visual Studio Code with the Remote - Containers extension installed.
 
-## Building the Docker Image
+## Running Flutter Web-Server
 
-1. Clone this repository.
-2. Navigate to the directory containing the Dockerfile.
-3. Run `docker build -t project .`
+1. Go to terminal
+3. Run `flutter run -d web-server`
 
 ## Using the Development Environment
 
