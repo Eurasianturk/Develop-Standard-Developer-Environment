@@ -1,16 +1,21 @@
-# project
+## Prerequisites
 
-A new Flutter project.
+- Docker
+- Visual Studio Code with the Remote - Containers extension installed.
 
-## Getting Started
+## Building the Docker Image
 
-This project is a starting point for a Flutter application.
+1. Clone this repository.
+2. Navigate to the directory containing the Dockerfile "D:\Users\yusuf\Desktop\Project2\devcontainer.json\git\develop-standard-developer-environment\project".
+3. Run `docker build -t project .`
 
-A few resources to get you started if this is your first Flutter project:
+## Using the Development Environment
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Open VS Code.
+2. Open the Command Palette (Ctrl+Shift+P) and select 'Remote-Containers: Open Folder in Container...'.
+3. Choose the folder where this repository is cloned.
+4. VS Code will start the container and open the folder inside it.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Troubleshooting
+
+- If you encounter any issues, ensure Docker is running and you have the necessary permissions to create and manage containers.
