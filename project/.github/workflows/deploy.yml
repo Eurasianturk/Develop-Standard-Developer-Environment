@@ -15,7 +15,7 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v1
       with:
-        flutter-version: '2.x.x' # Specify your Flutter version
+        flutter-version: 3.19.0 
 
     - name: Build Flutter Web
       run: flutter build web
@@ -24,4 +24,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build/web
+        publish_dir: .project/build/web
