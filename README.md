@@ -1,6 +1,3 @@
-# Develop-Standard-Developer-Environment
-
-## Prerequisites
 
 - Docker
 - Visual Studio Code with the Remote - Containers extension installed.
@@ -8,7 +5,7 @@
 ## Building the Docker Image
 
 1. Clone this repository.
-2. Navigate to the directory containing the Dockerfile.
+2. Navigate to the directory containing the Dockerfile "D:\Users\yusuf\Desktop\Project2\devcontainer.json\git\develop-standard-developer-environment\project".
 3. Run `docker build -t project .`
 
 ## Using the Development Environment
