@@ -1,5 +1,5 @@
 {
-	"name": "project",
+	"name": "Flutter project",
 	"build": {
 	  "context": ".",
 	  "dockerfile": "Dockerfile"
