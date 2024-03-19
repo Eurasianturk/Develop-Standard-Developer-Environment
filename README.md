@@ -8,6 +8,7 @@
 ## Running Flutter Web-Server
 
 1. Go to terminal
+2. D:\Users\yusuf\Desktop\Project2\devcontainer.json\git\develop-standard-developer-environment\project
 3. Run `flutter run -d web-server`
 
 ## Using the Development Environment
