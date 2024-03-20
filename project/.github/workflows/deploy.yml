@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Develop-Standard-Developer-Environment
 
 on:
   push:
