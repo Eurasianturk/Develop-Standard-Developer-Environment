@@ -1,4 +1,4 @@
-name: Flutter Build
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,27 +6,25 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Flutter
+      - name: Setup Flutter
         uses: subosito/flutter-action@v1
         with:
           flutter-version: 3.19.0
-      - name: Install dependencies
+
+      - name: Install Dependencies
         run: flutter pub get
 
-      - name: Run Flutter tests
-        run: flutter test
-
       - name: Build Web
-        run: flutter build web
+        run: flutter build web --release
 
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: web-build
-          path: project/build/web/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
