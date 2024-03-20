@@ -32,4 +32,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: web-build
-        path: build/web/
+        path: /project/build/web/index.html
+
